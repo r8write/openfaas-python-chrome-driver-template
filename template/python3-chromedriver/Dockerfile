@@ -1,5 +1,5 @@
 FROM openfaas/of-watchdog:0.7.7 as watchdog
-FROM python:3.7-alpine
+FROM python:3.8-alpine
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
