@@ -1,5 +1,5 @@
-FROM --platform=${TARGETPLATFORM:-linux/amd64} ghcr.io/openfaas/classic-watchdog:0.2.1 as watchdog
-FROM --platform=${TARGETPLATFORM:-linux/amd64} python:3-alpine
+FROM openfaas/of-watchdog:0.7.7 as watchdog
+FROM python:3.7-alpine
 
 ARG TARGETPLATFORM
 ARG BUILDPLATFORM
