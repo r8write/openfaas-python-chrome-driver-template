@@ -81,7 +81,7 @@ RUN chown -R app:app ./ && \
 
 USER app
 
-ENV fprocess="python3 index.py"
+ENV fprocess="python3 ./openfaas-carrier-people-trust/handler.py"
 EXPOSE 8080
 
 HEALTHCHECK --interval=3s CMD [ -e /tmp/.lock ] || exit 1
