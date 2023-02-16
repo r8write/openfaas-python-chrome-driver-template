@@ -24,8 +24,6 @@ RUN apk add wget
 
 RUN apk update && apk add --no-cache bash \
         alsa-lib \
-        at-spi2-atk \
-        atk \
         cairo \
         cups-libs \
         dbus-libs \
